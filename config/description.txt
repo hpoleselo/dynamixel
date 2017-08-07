@@ -1,0 +1,20 @@
+se fossemos controlar o torque de dois motores,
+mudariamos no yaml e no launch file o fato de ser joint para torque
+nesse caso o que for publicado no dual_motor/command sera a mensagem de velocidade do torque
+o que vai mudar é que ele ficará rodando e vamos só mudando a velocidade
+
+
+
+fazendo o tutorial do meta controller nós conseguimos controlar multiplos joints
+(talvez wheels) usando um action server, 
+
+ai é o só fazer um tilt.yaml com vários controllers e suas specs, fazer um launchfile
+sobe o controller launcher
+sobe o launchfile
+rostopic pub no topico do controller que voce quer
+
+$ rostopic pub -1 /joint_controller3/command /std_msgs/Float64 -- 1.0
+$ rostopic pub -1 /nome_do_topico/mensagem /tipo_de_mensagem/dado -- 1.0
+
+Podemos ir publicando em varios topicos diferentes, dai faz sentido a criação do meta controller,
+estaremos contrlando varios controllers, lembrando que o meta controller eh um server action!!

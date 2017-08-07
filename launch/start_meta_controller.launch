@@ -1,0 +1,22 @@
+<launch>
+<!-- Start tilt joint controller -->
+    <rosparam file="$(find treininhodynamixel)/config/tilt.yaml" command="load"/>
+    <node name="controller_spawner" pkg="dynamixel_controllers" type="controller_spawner.py"
+          args="--manager=dxl_manager
+                --port pan_tilt_port
+                joint_controller                      
+                "
+          output="screen"/>
+          
+  <!-- Start joints trajectory controller controller -->
+    <rosparam file="$(find treininhodynamixel)/config/control.yaml" command="load"/>
+    <node name="controller_spawner_meta" pkg="dynamixel_controllers" type="controller_spawner.py"
+          args="--manager=dxl_manager
+                --type=meta
+                arm_controller
+                joint_controller
+                                                
+                "
+                
+                          output="screen"/>
+</launch>

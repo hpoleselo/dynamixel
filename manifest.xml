@@ -1,0 +1,18 @@
+<package>
+  <description brief="treininhodynamixel">
+
+     treininhodynamixel
+
+  </description>
+  <author>henrique poleselo</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/treininhodynamixel</url>
+  <depend package="dynamixel_controllers"/>
+  <depend package="std_msgs"/>
+  <depend package="rospy"/>
+  <depend package="roscpp"/>
+
+</package>
+
+

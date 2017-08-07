@@ -1,0 +1,94 @@
+#define the goal
+  seq: 0
+  stamp:
+    secs: 0
+    nsecs: 0
+  frame_id: ''
+goal_id:
+  stamp:
+    secs: 0
+    nsecs: 0
+  id: ''
+goal:
+  trajectory:
+    header:
+      seq: 0
+      stamp:
+        secs: 0
+        nsecs: 0
+      frame_id: ''
+    joint_names:
+    - ''
+    points:
+    - positions: [0]
+      velocities: [0]
+      accelerations: [0]
+      effort: [0]
+      time_from_start: {secs: 0, nsecs: 0}
+  path_tolerance:
+  - {name: '', position: 0.0, velocity: 0.0, acceleration: 0.0}
+  goal_tolerance:
+  - {name: '', position: 0.0, velocity: 0.0, acceleration: 0.0}
+  goal_time_tolerance: {secs: 0, nsecs: 0}" 
+---
+#define the result
+  seq: 0
+  stamp:
+    secs: 0
+    nsecs: 0
+  frame_id: ''
+status:
+  goal_id:
+    stamp:
+      secs: 0
+      nsecs: 0
+    id: ''
+  status: 0
+  text: ''
+result:
+  error_code: 0
+  error_string: ''" 
+
+---
+#define a feedback msg
+  seq: 0
+  stamp:
+    secs: 0
+    nsecs: 0
+  frame_id: ''
+status:
+  goal_id:
+    stamp:
+      secs: 0
+      nsecs: 0
+    id: ''
+  status: 0
+  text: ''
+feedback:
+  header:
+    seq: 0
+    stamp: {secs: 0, nsecs: 0}
+    frame_id: ''
+  joint_names: ['']
+  desired:
+    positions: [0]
+    velocities: [0]
+    accelerations: [0]
+    effort: [0]
+    time_from_start: {secs: 0, nsecs: 0}
+  actual:
+    positions: [0]
+    velocities: [0]
+    accelerations: [0]
+    effort: [0]
+    time_from_start: {secs: 0, nsecs: 0}
+  error:
+    positions: [0]
+    velocities: [0]
+    accelerations: [0]
+    effort: [0]
+    time_from_start: {secs: 0, nsecs: 0}" 
+
+
+
+
